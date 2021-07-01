@@ -1,0 +1,16 @@
+<div class="contenedor-bmi contenedor-resultado h-8">
+    <h1>RESULTADO</h1>
+    <div class="resultado">
+        <h2>{{ bmi | number:'2.1-2' }}</h2>
+        <h6 [ngClass]="{
+                'bajo': classResultado === 'bajo',
+                'normal': classResultado === 'normal',
+                'alto': classResultado === 'alto'
+            }">{{ resultado }}</h6>
+        <p>{{ interpretacion }}</p>
+    </div>
+    <a [routerLink]="[ '/home']" class="btn-regresar">
+        <i class="fas fa-arrow-left"></i>
+        Regresar
+    </a>
+</div>

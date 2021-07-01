@@ -1,1 +1,159 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    padding: 40px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background-color: #FFF;
+    font-size: 16px;
+    flex: 1;
+}
+button{
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(247, 247, 247);
+    color: #000;
+}
+.btns-flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.numero{
+    font-size: 32px;
+    margin: 5px 0;
+    font-weight: 700;
+}
+.h-8{
+    height: 800px;
+}
+/* ===================================== */
+.contenedor-bmi{
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.bmi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.genero button > *{
+    display: block;
+    text-align: center;
+}
+.genero button i{
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.altura input{
+    width: 100%;
+}
+.btn-calcular{
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+.btn-calcular:active{
+    background-color: rgb(247, 247, 247);
+}
+
+.peso-edad .botones{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.peso-edad .botones button{
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonSelecionado{
+    background-color: #0a69d4;
+    color: #FFF;
+}
+/* ============================================== */
+.contenedor-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-resultado h2{
+    margin-top: 150px;
+    font-size: 80px;
+}
+.contenedor-resultado h6{
+    /* background-color: #575757; */
+    font-size: 14px;
+    /* color: #FFF; */
+    padding: 3px 10px;
+    display: inline;
+    border-radius: 10px;
+}
+.contenedor-resultado p{
+    margin: 15px auto;
+    width: 80%;
+}
+.btn-regresar{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-regresar:active{
+    color: #cfcfcf;
+}
+.btn-regresar:visited {
+    color: #000;
+}
+.bajo{
+    background-color: yellow;
+    color: #000
+}
+.normal{
+    background-color: green;
+    color: #FFF;
+}
+.alto{
+    background-color: red;
+    color: #FFF;
+}
+
+/* sweetalert2 */
+.swal2-confirm.swal2-styled{
+    background-color: #0a69d4 !important;
+}
+.swal2-title{
+    /* font-size: 24px !important; */
+}

@@ -1,0 +1,50 @@
+<div class="contenedor-bmi h-8">
+    <h1>BMI CALCULATOR</h1>
+    <div class="bmi">
+
+        <div class="genero btns-flex">
+            <button (click)=" agregarGenero('masculino')"
+                    class="btn botonSelecionado"
+                    [class.botonSelecionado]="genero === 'masculino'">
+                <i class="fas fa-mars"></i>
+                Masculino
+            </button>
+            <button (click)=" agregarGenero('femenino')"
+                    class="btn"
+                    [class.botonSelecionado]="genero === 'femenino'">
+                <i class="fas fa-venus"></i>
+                Femenino
+            </button>
+        </div>
+
+
+        <div class="btn altura">
+            <p>Altura</p>
+            <p class="numero">{{ altura }}cm</p>
+            <input class=""
+                    (input)="editarAltura( $event )" 
+                    [value]="altura"
+                    type="range" 
+                    name="altura" 
+                    min="40" 
+                    max="300" 
+                    step="1">
+        </div>
+
+
+        <div class="btns-flex peso-edad">
+            <app-acomulador class="btn"
+                            titulo="peso" 
+                            [valor]="peso" 
+                            (onValor)="editarPeso($event)">
+            </app-acomulador>
+            <app-acomulador class="btn" 
+                            titulo="edad" 
+                            [valor]="edad"
+                            (onValor)="editarEdad($event)">
+            </app-acomulador>
+        </div>
+
+        <button (click)="calcular()" class="btn-calcular">Calcular</button>
+    </div>
+</div>
